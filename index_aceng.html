@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Genz Management</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f3f4f6;
+      color: #1f2937;
+    }
+    header {
+      background: linear-gradient(to right, #3b82f6, #1e3a8a);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      position: relative;
+    }
+    header img {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 10px 0;
+    }
+    header p {
+      font-size: 1.2em;
+      font-style: italic;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #1e3a8a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #3b82f6;
+    }
+    section {
+      max-width: 960px;
+      margin: auto;
+      padding: 60px 20px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      color: #1e3a8a;
+      margin-bottom: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-left: 6px solid #3b82f6;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      border-radius: 8px;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    .portfolio img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .contact a {
+      color: #1e3a8a;
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        flex: 1 1 100%;
+        text-align: center;
+      }
+      .portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="img/logo gen z.png" alt="Logo Genz Management" />
+    <h1>Genz Management</h1>
+    <p>Together We Grow, Together We Shine</p>
+  </header>
+
+  <nav>
+    <a href="#kontak">Kontak</a>
+    <a href="#visi">Visi & Misi</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#keunggulan">Keunggulan</a>
+    <a href="#harga">Harga</a>
+    <a href="#portofolio">Portofolio</a>
+  </nav>
+
+  <section id="kontak" class="card">
+    <h2>📞 Kontak Center</h2>
+    <p>WhatsApp 1(Kak Ace): <strong>0813-8426-3695</strong></p>
+    <p>WhatsApp 2(kak Radja): <strong>0857-1234-5678</strong></p>
+    <p>Instagram: <a href="https://www.instagram.com/gez_management" target="_blank">@gez_management</a></p>
+  </section>
+
+  <section id="visi" class="card">
+    <h2>🚀 Visi & Misi</h2>
+    <p><strong>Visi:</strong><br>
+    Menjadi akun Instagram management yang terpercaya dalam membantu brand berkembang melalui promosi, endorsement, dan kolaborasi yang efektif.</p>
+    <p><strong>Misi:</strong></p>
+    <ol>
+      <li>Membuka ruang kolaborasi dengan berbagai brand dan produk.</li>
+      <li>Menyediakan layanan promosi yang kreatif dan menarik.</li>
+      <li>Membantu meningkatkan awareness dan penjualan produk melalui endorsement.</li>
+      <li>Menjalin kerjasama jangka panjang dengan berbagai partner bisnis.</li>
+    </ol>
+  </section>
+
+  <section id="layanan" class="card">
+    <h2>🎯 Layanan yang Ditawarkan</h2>
+    <ul>
+      <li>✅ <strong>Endorsement</strong>: Promosi melalui postingan/reels/story dengan konsep kreatif sesuai kebutuhan brand.</li>
+      <li>✅ <strong>Product Visit</strong>: Mengunjungi toko/UMKM/brand untuk membuat konten promosi langsung dari lokasi.</li>
+      <li>✅ <strong>Collaboration</strong>: Partnership jangka panjang untuk meningkatkan awareness brand secara konsisten.</li>
+      <li>✅ <strong>Event & Campaign Management</strong>: Membantu brand mengadakan campaign (giveaway, event online, promo khusus).</li>
+    </ul>
+  </section>
+
+  <section id="keunggulan" class="card">
+    <h2>🌟 Keunggulan Akun Kami</h2>
+    <ul>
+      <li>✨ Target market sesuai tren.</li>
+      <li>✨ Konten promosi dikemas menarik & kreatif.</li>
+      <li>✨ Fleksibel dengan berbagai jenis produk (fashion, makanan, kecantikan, lifestyle, dll).</li>
+      <li>✨ Terbuka untuk kerja sama jangka panjang maupun sekali posting.</li>
+    </ul>
+  </section>
+
+  <section id="harga" class="card">
+    <h2>💰 Harga Produk</h2>
+    <ul>
+      <li><strong>Instagram Story (24 jam)</strong>
+        <ul>
+          <li>1x Story: Rp25.000</li>
+          <li>3x Story (paket): Rp50.000</li>
+        </ul>
+      </li>
+      <li><strong>Instagram Feed Post</strong>
+        <ul>
+          <li>1x Feed (foto): Rp40.000</li>
+          <li>1x Feed (video/reels): Rp60.000</li>
+        </ul>
+      </li>
+      <li><strong>Paket Kombinasi</strong>
+        <ul>
+          <li>1x Feed + 2x Story: Rp70.000</li>
+          <li>1x Reels + 3x Story: Rp100.000</li>
+        </ul>
+      </li>
+      <li><strong>Product Visit / Review</strong>
+        <ul>
+          <li>Kunjungan langsung + dokumentasi konten: mulai Rp150.000 – Rp350.000 (tergantung lokasi & kebutuhan brand).</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section id="portofolio" class="card portfolio">
+    <h2>📸 Portofolio</h2>
+    <img src="img/fotobooth 1.jpg" alt="Code 1" width="200" height="400"></img>
+    <img src="img/ig 3.jpg" alt="Code 2"width="200" height="400" ></img>
+    <img src="img/ig 2.jpg" alt="code 3"width="200" height="400"></img>
+    <img src="img/ig 1.jpg" alt="code 3"width="200" height="400"></img>
+  </section>
+
+  <footer>
+    &copy; 2K25 Genz Management. All rights reserved.
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>
